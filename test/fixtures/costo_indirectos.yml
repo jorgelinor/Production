@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idRequisitoIndirecto: MyString
+  nombreRequisitoInd: MyString
+  descripcion: MyText
+  cantidadNecesaria: 1.5
+  costoPorUnidad: 1.5
+  unidadDeMedida: MyString
+  formula: one
+
+two:
+  idRequisitoIndirecto: MyString
+  nombreRequisitoInd: MyString
+  descripcion: MyText
+  cantidadNecesaria: 1.5
+  costoPorUnidad: 1.5
+  unidadDeMedida: MyString
+  formula: two

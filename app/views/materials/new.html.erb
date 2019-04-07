@@ -1,0 +1,52 @@
+<%= form_with scope: :material, url: controladora_almacen_materials_path(1, 1), local: true do |form| %>
+  <p>
+    <%= form.label :idMaterial %><br>
+    <%= form.text_field :idMaterial %>
+  </p>
+
+  <p>
+    <%= form.label :codigoMaterial %><br>
+    <%= form.text_field :codigoMaterial %>
+  </p>
+ 
+  <p>
+    <%= form.label :nombre %><br>
+    <%= form.text_area :nombre %>
+  </p>
+ 
+  <p>
+    <%= form.label :descripcion %><br>
+    <%= form.text_area :descripcion %>
+  </p>
+ 
+  <p>
+    <%= form.label :estatus %><br>
+    <%= form.text_area :estatus %>
+  </p>
+ 
+  <p>
+    <%= form.label :cantidadDisponible %><br>
+    <%= form.text_area :cantidadDisponible %>
+  </p>
+ 
+  <p>
+    <%= form.label :unidadDeMedida %><br>
+    <%= form.text_area :unidadDeMedida %>
+  </p>
+ 
+  <p>
+    <%= form.label :fechaDeVencimiento %><br>
+    <%= form.text_area :fechaDeVencimiento %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+
+  <div>
+    <%= @material.idMaterial %>
+  </div>
+
+  
+<%= link_to 'Back', controladora_almacen_materials_path(1, 1) %>
+<% end %>

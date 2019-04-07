@@ -1,0 +1,26 @@
+
+<h1>Listing controladoras</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th></th>
+  </tr>
+ 
+  <% @controladoras.each do |controladora| %>
+    <tr>
+      <td><%= controladora.id %></td>
+      <td><%= link_to 'Show', controladora_path(controladora) %></td>
+    </tr>
+  <% end %>
+
+
+  <div>
+    <%= link_to 'New controladora', new_controladora_path %>
+  </div>
+  <div>
+    <%= link_to 'Back', welcome_index_path %>
+  </div>
+  
+</table>

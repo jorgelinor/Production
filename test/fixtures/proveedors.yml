@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idProveedor: MyString
+  nombre: MyString
+  telefono: MyString
+  email: MyString
+  controladora: one
+
+two:
+  idProveedor: MyString
+  nombre: MyString
+  telefono: MyString
+  email: MyString
+  controladora: two

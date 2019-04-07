@@ -1,0 +1,42 @@
+<%= form_with scope: :producto, url: controladora_almacen_productos_path(@controladora, @controladora.almacen), local: true do |form| %>
+  <p>
+    <%= form.label :nombre %><br>
+    <%= form.text_field :nombre %>
+  </p>
+
+  <p>
+    <%= form.label :porcentaje_ganancia %><br>
+    <%= form.text_field :porcentaje_ganancia %>
+  </p>
+
+  <table>
+
+    <tr>
+      <th>Codigo</th>
+      <th>Nombre</th>
+      <th></th>
+    </tr>
+    <% @controladora.almacen.materials.each do |material| %>
+      <tr>
+        <td>
+          <%= material.codigoMaterial %>
+        </td>
+        <td>
+          <%= material.nombre %>
+        </td>
+      </tr>
+    <% end %>
+  <table>
+
+  <p>
+    <%= form.label :materiales %><br>
+    <%= form.text_field :materiales %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+
+  
+<%= link_to 'Back', controladora_almacen_productos_path(@controladora, @controladora.almacen) %>
+<% end %>

@@ -1,0 +1,27 @@
+
+<h1>Listing materials</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th></th>
+  </tr>
+ 
+  <% @controladora.almacen.materials.each do |material| %>
+    <tr>
+      <td><%= material.codigo %></td>
+      <td><%= material.nombre %></td>
+      <td><%= link_to 'Show', controladora_almacen_material_path(material) %></td>
+    </tr>
+  <% end %>
+
+
+  <div>
+    <%= link_to 'New material', new_controladora_almacen_material_path %>
+  </div>
+  <div>
+    <%= link_to 'Back', welcome_index_path %>
+  </div>
+  
+</table>

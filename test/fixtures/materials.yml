@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idMaterial: MyString
+  codigoMaterial: MyString
+  nombre: MyString
+  descripcion: MyText
+  estatus: MyString
+  cantidadDisponible: 1.5
+  unidadDeMedida: MyString
+  fechaDeVencimiento: 2019-04-07
+  almacen: one
+
+two:
+  idMaterial: MyString
+  codigoMaterial: MyString
+  nombre: MyString
+  descripcion: MyText
+  estatus: MyString
+  cantidadDisponible: 1.5
+  unidadDeMedida: MyString
+  fechaDeVencimiento: 2019-04-07
+  almacen: two

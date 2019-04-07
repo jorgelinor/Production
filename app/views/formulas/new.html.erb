@@ -1,0 +1,16 @@
+<table>
+
+  <tr>
+    <th>Codigo</th>
+    <th>Nombre</th>
+    <th></th>
+  </tr>
+	<% @materiales.each { |material|  } %>
+		<div>
+			<%= material.codigoMaterial %>
+		</div>
+		<div>
+			<%= material.nombre %>
+		</div>
+	<% end %>
+<table>

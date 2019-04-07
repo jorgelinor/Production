@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idProducto: MyString
+  nombre: MyString
+  porcentajeGanancia: 1.5
+  almacen: one
+
+two:
+  idProducto: MyString
+  nombre: MyString
+  porcentajeGanancia: 1.5
+  almacen: two

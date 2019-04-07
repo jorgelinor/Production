@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idCosto: MyString
+  monto: 1.5
+  ultimaFechaUtilizado: 2019-04-07
+  actual: 
+  material: one
+
+two:
+  idCosto: MyString
+  monto: 1.5
+  ultimaFechaUtilizado: 2019-04-07
+  actual: 
+  material: two
